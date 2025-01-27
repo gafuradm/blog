@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import posts from '@/data/posts.json';
+import posts from '.../data/posts.json';
 
 export default function PostPage() {
   const router = useRouter();

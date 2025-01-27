@@ -1,10 +1,11 @@
-// pages/index.js
+import PostList from '@/components/PostList';
+import posts from '@/data/posts.json';
+
 export default function Home() {
-    return (
-      <div>
-        <h1>Welcome to Gafur's Website!</h1>
-        <p>This is a placeholder homepage. Start building your content here.</p>
-      </div>
-    );
-  }
-  
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+      <h1 className="text-3xl font-bold mb-4">Welcome to the Blog</h1>
+      <PostList posts={posts} />
+    </div>
+  );
+}

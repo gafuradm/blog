@@ -1,0 +1,15 @@
+[
+    {
+      "title": "What is Artificial Intelligence?",
+      "slug": "what-is-ai",
+      "excerpt": "Learn the basics of Artificial Intelligence and its applications.",
+      "content": "Artificial Intelligence (AI) is the simulation of human intelligence in machines that are programmed to think and learn..."
+    },
+    {
+      "title": "Introduction to Machine Learning",
+      "slug": "intro-to-ml",
+      "excerpt": "A beginner's guide to Machine Learning and how it works.",
+      "content": "Machine Learning is a subset of AI that focuses on building systems that can learn and improve from experience..."
+    }
+  ]
+  

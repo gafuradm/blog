@@ -1,18 +1,11 @@
-import Link from "next/link";
+import PostItem from './PostItem';
 
-const PostList = ({ posts }) => {
+export default function PostList({ posts }) {
   return (
-    <div className="grid gap-6">
+    <div className="space-y-4">
       {posts.map((post) => (
-        <div key={post.id} className="bg-gray-100 rounded-lg shadow p-5 hover:shadow-md transition">
-          <Link href={`/${post.slug}`} className="text-2xl font-semibold text-blue-600 hover:text-blue-800">
-            {post.title}
-          </Link>
-          <p className="text-gray-600 mt-2">{post.description}</p>
-        </div>
+        <PostItem key={post.slug} post={post} />
       ))}
     </div>
   );
-};
-
-export default PostList;
+}

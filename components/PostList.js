@@ -1,4 +1,4 @@
-import PostItem from './PostItem';
+import PostItem from './PostItem.js';
 
 export default function PostList({ posts }) {
   return (

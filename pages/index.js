@@ -1,26 +1,11 @@
-"use client";
-import Head from "next/head";
-import PostList from "../components/PostList.js";
+import PostList from '/components/PostList';
+import posts from '../data/posts.json';
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        <title>Мой блог</title>
-        <meta name="description" content="Личный блог о разработке и технологиях." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className="min-h-screen bg-gray-50 py-10">
-        <div className="container mx-auto max-w-4xl bg-white shadow-lg rounded-lg p-6">
-          <header className="mb-10 text-center">
-            <h1 className="text-4xl font-extrabold text-gray-800">Добро пожаловать в мой блог!</h1>
-            <p className="text-gray-600 mt-2">Думай, пиши, делись мыслями.</p>
-          </header>
-          <section>
-            <PostList />
-          </section>
-        </div>
-      </main>
-    </>
+    <div className="max-w-4xl mx-auto p-6">
+      <h1 className="text-3xl font-bold mb-4">Welcome to the Blog</h1>
+      <PostList posts={posts} />
+    </div>
   );
 }

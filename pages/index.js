@@ -1,4 +1,4 @@
-import PostList from '..PostList/components/PostList';
+import PostList from '../components/PostList.js';
 import posts from '../data/posts.json';
 
 export default function Home() {

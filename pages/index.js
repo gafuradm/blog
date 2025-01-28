@@ -1,5 +1,5 @@
-import PostList from '.../components/PostList';
-import posts from '.../data/posts.json';
+import PostList from '..PostList/components/PostList';
+import posts from '..posts.json';
 
 export default function Home() {
   return (

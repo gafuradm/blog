@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 px-6 shadow-lg">
-      <div className="max-w-5xl mx-auto flex justify-between items-center">
+    <header className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 shadow-md">
+      <div className="max-w-5xl mx-auto flex justify-between items-center px-6">
         <Link href="/">
-          <span className="text-2xl font-extrabold tracking-wide cursor-pointer">
+          <span className="text-2xl font-bold tracking-wide cursor-pointer">
             Gafur's Blog
           </span>
         </Link>

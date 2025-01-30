@@ -2,17 +2,19 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center p-5 bg-gray-900 text-white">
-      <div className="text-xl font-bold">
+    <header className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 px-6 shadow-lg">
+      <div className="max-w-5xl mx-auto flex justify-between items-center">
         <Link href="/">
-          <span>Gafur's Blog</span>
+          <span className="text-2xl font-extrabold tracking-wide cursor-pointer">
+            Gafur's Blog
+          </span>
         </Link>
-      </div>
-      <div className="flex space-x-4">
-        <Link href="https://github.com/gafuradm" target="_blank" rel="noopener noreferrer">
-          GitHub
-        </Link>
-        <a href="mailto:gafur.adm09adm@yandex.ru">gafur.adm09adm@yandex.ru</a>
+        <div className="flex space-x-4">
+          <Link href="https://github.com/gafuradm" target="_blank">
+            GitHub
+          </Link>
+          <a href="mailto:gafur.adm09adm@yandex.ru">Контакты</a>
+        </div>
       </div>
     </header>
   );
